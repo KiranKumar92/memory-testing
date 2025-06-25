@@ -15,7 +15,7 @@ namespace memory.testing.pooling
         #endregion
 
         #region Properties
-        public ObjectPool<Card> FlipCardPool => _cardPool;
+        public ObjectPool<Card> CardPool => _cardPool;
         
         #endregion
 
