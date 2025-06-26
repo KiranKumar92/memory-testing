@@ -14,10 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fObjects:
   - fObjectID: 0
-    fObjectSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    fObjectSprite: {fileID: 21300000, guid: be49527521ff9ff48935be6a46f92bdc, type: 3}
   - fObjectID: 1
-    fObjectSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    fObjectSprite: {fileID: 21300000, guid: 60f08eaf038a288488d2bd9f6f0ce66a, type: 3}
   - fObjectID: 2
-    fObjectSprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    fObjectSprite: {fileID: 21300000, guid: eec1705ac58c6a343a9fef7034af5ac1, type: 3}
   - fObjectID: 3
-    fObjectSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    fObjectSprite: {fileID: 21300000, guid: e49a77fb3586d0f48a7c63d7fd149d1f, type: 3}
+  - fObjectID: 4
+    fObjectSprite: {fileID: 21300000, guid: 770692f9d8340b543aa4422621eb0604, type: 3}
+  - fObjectID: 5
+    fObjectSprite: {fileID: 21300000, guid: eb3facc501f363d41ac6777b40cafe91, type: 3}
+  - fObjectID: 6
+    fObjectSprite: {fileID: 21300000, guid: 837d031cd0c8f2b40a70ba1d7ffc3311, type: 3}
+  - fObjectID: 7
+    fObjectSprite: {fileID: 21300000, guid: 4dcca4d3becd0e94fa08eea7aaff7e3b, type: 3}
+  - fObjectID: 8
+    fObjectSprite: {fileID: 21300000, guid: 0495ef55f2efd0841b1318d7b5644b5d, type: 3}
+  - fObjectID: 9
+    fObjectSprite: {fileID: 21300000, guid: 4543904b83b0e7645ae3f0050128110f, type: 3}
+  - fObjectID: 10
+    fObjectSprite: {fileID: 21300000, guid: f66b392a942f2ab4486bef0ce092d419, type: 3}
+  - fObjectID: 11
+    fObjectSprite: {fileID: 21300000, guid: c2ab64fe9d393274db3d286a7e26fab5, type: 3}
+  - fObjectID: 12
+    fObjectSprite: {fileID: 21300000, guid: b43f549616022a441b9f9e10f8abc9c7, type: 3}
+  - fObjectID: 13
+    fObjectSprite: {fileID: 21300000, guid: 46973cd238f163643aa5c9c264712117, type: 3}
+  - fObjectID: 14
+    fObjectSprite: {fileID: 21300000, guid: 3c8a3308368081e4ab47c0db68b1b254, type: 3}
+  - fObjectID: 15
+    fObjectSprite: {fileID: 21300000, guid: a502ed7803411a94ba9f60eb80d33420, type: 3}
+  - fObjectID: 16
+    fObjectSprite: {fileID: 21300000, guid: 8819443a04efb7248876e08b196450d0, type: 3}
+  - fObjectID: 17
+    fObjectSprite: {fileID: 21300000, guid: 393b1c5ef7a0f8b42afd196eeecf96c2, type: 3}
+  - fObjectID: 19
+    fObjectSprite: {fileID: 21300000, guid: 9b7019423c569314eb8e48683b15ac3e, type: 3}
+  - fObjectID: 20
+    fObjectSprite: {fileID: 21300000, guid: f03c94bdcc429f649b952cb3f1840ce1, type: 3}
