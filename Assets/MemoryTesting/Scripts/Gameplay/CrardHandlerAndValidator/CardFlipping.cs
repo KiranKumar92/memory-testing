@@ -95,7 +95,7 @@ namespace memory.testing.card
         /// Activate the back flip if the card is not a match
         /// </summary>
         /// <param name="isMatch"></param>
-        private void ActivateCardBackFlip(bool isMatch)
+        private void ActivateCardBackFlip(bool isMatch, int cardId)
         {
             if (!currentCard.isBackFliped)
                 return;

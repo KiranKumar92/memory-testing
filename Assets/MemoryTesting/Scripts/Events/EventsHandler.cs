@@ -15,7 +15,7 @@ namespace memory.testing.events
         /// <summary>
         /// Invoked once match comparision is done
         /// </summary>
-        public static Action<bool> CardMatchResult;
+        public static Action<bool, int> CardMatchResult;
 
         /// <summary>
         /// When game started it send number of match count need to performed to complete the current level

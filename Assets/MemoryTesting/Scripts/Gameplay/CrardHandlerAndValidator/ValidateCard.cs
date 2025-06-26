@@ -39,11 +39,11 @@ namespace memory.testing.card
             {
                 if (_currentCard.cardType == type)
                     return;
-                EventsHandler.CardMatchResult?.Invoke(true);
+                EventsHandler.CardMatchResult?.Invoke(true, _currentCard.currentID);
             }
             else
             {
-                EventsHandler.CardMatchResult?.Invoke(false);
+                EventsHandler.CardMatchResult?.Invoke(false, _currentCard.currentID);
             }
         }
         private void SetBlockCard(Type arg1, bool canRest)
