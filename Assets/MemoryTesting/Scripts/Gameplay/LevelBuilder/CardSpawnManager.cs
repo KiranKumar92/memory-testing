@@ -106,6 +106,7 @@ namespace memory.testing.card
             if (this.level >= gridSizeDataSO.levelData.Length - 1)
             {
                 this.level = 0;
+                _playerData.SavePlayerProgress(this.level);
             }
 
             GridSizeData _levelData = gridSizeDataSO.levelData[this.level];
