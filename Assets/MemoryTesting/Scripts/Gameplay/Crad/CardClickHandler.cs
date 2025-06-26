@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace memory.testing.card
 {
-    public class CardClickHandler : MonoBehaviour
+    public class CardClickHandler : MonoBehaviour, IPointerClickHandler
     {
          public void OnPointerClick(PointerEventData eventData)
         {
