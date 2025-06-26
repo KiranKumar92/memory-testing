@@ -74,6 +74,7 @@ namespace memory.testing.card
                 return;
             if (!isMatch)
             {
+                AudioManager.Instance.PlayOneShootFlipMatchSound(false);
                 return;
             }
 
@@ -84,6 +85,7 @@ namespace memory.testing.card
             if (cardType == typeof(TargetCard))
             {
                 EventsHandler.PlayParticleEffect?.Invoke(matchImage.sprite, null);
+                AudioManager.Instance.PlayOneShootFlipMatchSound(true);
                 EventsHandler.OnSuccessMatchIncreaseCount?.Invoke();
             }
 

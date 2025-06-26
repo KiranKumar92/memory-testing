@@ -38,6 +38,16 @@ namespace memory.testing.events
         public static Action OnSuccessMatchIncreaseCount;
         #endregion
 
+        #region Audio
+
+        /// <summary>
+        /// Invoked to play audio clip
+        /// </summary>
+        public delegate void PlayAudio(AudioClip audioClip);
+        public static PlayAudio PlayAudioClip;
+
+        #endregion
+
 
         #region Particle Effect
 
