@@ -68,11 +68,11 @@ namespace memory.testing.card
         #endregion
 
         #region Private Method
-        private void PlaySuccessfulEvent(bool isMatch)
+        private void PlaySuccessfulEvent(bool result, int cardId)
         {
             if (!isBackFliped)
                 return;
-            if (!isMatch)
+            if (!result)
             {
                 AudioManager.Instance.PlayOneShootFlipMatchSound(false);
                 return;

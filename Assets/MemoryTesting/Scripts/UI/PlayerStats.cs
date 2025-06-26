@@ -42,7 +42,7 @@ namespace memory.testing
             EventsHandler.CardMatchCount -= SetActualMatchCount;
         }
 
-        private void UpdateUI(bool result)
+        private void UpdateUI(bool result, int cardId)
         {
             _turnsCountText.text = $"Attempt\n {++_turnsCount}";
             if (result)

@@ -1,4 +1,5 @@
 using memory.testing.events;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -11,7 +12,6 @@ namespace memory.testing.card
         [Header("LeanTweenSpeed")]
         [SerializeField] private float fullScaleSpeed = 1f;
         [SerializeField] private float shrinkSpeed = 0.2f;
-
         #endregion
 
         #region Private Variables
@@ -26,9 +26,9 @@ namespace memory.testing.card
         #endregion
 
         #region Private Methods
-        private void DisableFlipCardMatchResult(bool obj)
+        private void DisableFlipCardMatchResult(bool result, int cardId)
         {
-            if (_currentCard.isBackFliped && obj)
+            if (_currentCard.isBackFliped && result && cardId == _currentCard.currentID)
             {
                 StartCoroutine(nameof(iDelayedCall));
               
