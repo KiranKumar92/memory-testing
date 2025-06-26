@@ -68,6 +68,7 @@ namespace memory.testing.card
             {
                 EventsHandler.FlippedMemoryCard?.Invoke(currentCard.cardType, false);
                 isFlipping = true;
+                LeanTween.rotate(gameObject, new Vector3(0, 90, 0), tweenRotationSpeed).setOnComplete(FrontFlip);
             }
         }
 
@@ -109,6 +110,7 @@ namespace memory.testing.card
         private IEnumerator iBackFlippingRoutine()
         {
             yield return new WaitForSeconds(coroutineSpeed);
+            LeanTween.rotate(gameObject, new Vector3(0, 90, 0), tweenRotationSpeed).setOnComplete(BackFlip);
         }
         private void BackFlip()
         {
@@ -123,6 +125,11 @@ namespace memory.testing.card
         private void ChangePara(Action onComplete = null)
         {
             currentCard.isBackFliped = !(currentCard.isBackFliped);
+            LeanTween.rotate(gameObject, new Vector3(0, 0, 0), tweenRotationSpeed).setOnComplete(() =>
+            {
+                isFlipping = false;
+                onComplete?.Invoke();
+            });
         }
         #endregion
     }

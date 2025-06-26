@@ -32,6 +32,16 @@ namespace memory.testing.card
             {
                 StartCoroutine(nameof(iDelayedCall));
               
+                LeanTween.scale(gameObject, fullScale, fullScaleSpeed).setEaseOutBounce().setOnComplete(() =>
+                {
+                    LeanTween.scale(gameObject, Vector2.zero, shrinkSpeed).setOnComplete(() =>
+                    {
+                        if (_currentCard.gameObject.activeSelf)
+                        {
+                            _currentCard.ReturnToPool();
+                        }
+                    });
+                });
             }
         }
         private IEnumerator iDelayedCall()

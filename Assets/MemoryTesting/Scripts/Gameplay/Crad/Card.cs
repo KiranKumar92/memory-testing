@@ -1,3 +1,4 @@
+using memory.testing.events;
 using System;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -23,6 +24,15 @@ namespace memory.testing.card
         internal Type cardType;
         internal bool isBackFliped;
         internal bool onSuccessMatchCompleted;
+        #endregion
+
+        #region Unity Callbacks
+        private void OnEnable()
+        {
+            onSuccessMatchCompleted = false;
+            EventsHandler.CardMatchResult += PlaySuccessfulEvent;
+        }
+        private void OnDisable() => EventsHandler.CardMatchResult -= PlaySuccessfulEvent;
         #endregion
 
         #region Public Methods
@@ -54,6 +64,29 @@ namespace memory.testing.card
         {
             _cardPool.Release(this);
             transform.localScale = _transform.localScale;
+        }
+        #endregion
+
+        #region Private Method
+        private void PlaySuccessfulEvent(bool isMatch)
+        {
+            if (!isBackFliped)
+                return;
+            if (!isMatch)
+            {
+                return;
+            }
+
+            //Each card should have only one success call
+            if (onSuccessMatchCompleted)
+                return;
+            onSuccessMatchCompleted = true;
+            if (cardType == typeof(TargetCard))
+            {
+                EventsHandler.PlayParticleEffect?.Invoke(matchImage.sprite, null);
+                EventsHandler.OnSuccessMatchIncreaseCount?.Invoke();
+            }
+
         }
         #endregion
 

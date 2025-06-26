@@ -38,5 +38,18 @@ namespace memory.testing.events
         public static Action OnSuccessMatchIncreaseCount;
         #endregion
 
+
+        #region Particle Effect
+
+        /// <summary>
+        /// Invoke to play particle effect
+        /// </summary>
+        public static Action<Sprite, Transform> PlayParticleEffect;
+
+        //To Enable and Disable Color Over Lifetime for Different Level
+        public delegate void ParticleSystemColoring(bool isRequired);
+        public static ParticleSystemColoring isColorOverLifeTime;
+
+        #endregion
     }
 }
