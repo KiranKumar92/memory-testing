@@ -15,9 +15,9 @@ MonoBehaviour:
   fObjects:
   - fObjectID: 0
     fObjectSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - fObjectID: 0
+  - fObjectID: 1
     fObjectSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - fObjectID: 0
+  - fObjectID: 2
     fObjectSprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  - fObjectID: 0
+  - fObjectID: 3
     fObjectSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
