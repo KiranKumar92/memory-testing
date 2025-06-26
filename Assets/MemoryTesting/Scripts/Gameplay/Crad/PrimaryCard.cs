@@ -1,6 +1,7 @@
 using UnityEngine;
 using memory.testing.core;
 using memory.testing.pooling;
+
 namespace memory.testing.card
 {
     public class PrimaryCard : BaseCard
