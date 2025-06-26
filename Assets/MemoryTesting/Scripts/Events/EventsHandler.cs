@@ -22,6 +22,10 @@ namespace memory.testing.events
         /// </summary>
         public static Action<int> CardMatchCount;
 
+        /// <summary>
+        /// Once all match is done it is called to start another level or next level
+        /// </summary>
+        public static Action StartTheCardLevel;
 
         /// <summary>
         /// This will set the intractability of button if Flipped card is same type as listened card then Set button interact false else true

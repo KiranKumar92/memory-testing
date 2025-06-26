@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
+  m_Color: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 352569770}
   - component: {fileID: 352569769}
   m_Layer: 5
-  m_Name: FlipCardContainer
+  m_Name: CardContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,8 +313,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6181781522575130202}
   - component: {fileID: 7241814101278806957}
+  - component: {fileID: 1090639899}
+  - component: {fileID: 1375588394366364410}
   m_Layer: 5
-  m_Name: FlipCard Manager
+  m_Name: Card Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,5 +353,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3eac908d3900ab0428bd67636dc34f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1090639899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181781522575130203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bb2c3b4b4aab440bb29424068a5b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryPanel: {fileID: 6181781521472508667}
+  flipCardPooling: {fileID: 1689812951210587717}
+  flipLettersSo: {fileID: 11400000, guid: 21e4c78655cb9314a9d9389109e1e150, type: 2}
+  flipObjectSo: {fileID: 11400000, guid: 21e4c78655cb9314a9d9389109e1e150, type: 2}
+  level: 1
+  gridSizeDataSO: {fileID: 11400000, guid: 34ec612c8631718448a6a3c48d3f4b7d, type: 2}
+--- !u!114 &1375588394366364410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181781522575130203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019fcad71315b5a4cbee12d6498ebde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
